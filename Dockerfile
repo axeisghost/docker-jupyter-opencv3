@@ -6,7 +6,7 @@ ENV PYTHON_VERSION 2.7
 ENV NUM_CORES 4
 
 # Install OpenCV 3.0
-RUN apt-get -y update
+RUN apt-get -qq update
 RUN apt-get -y install python$PYTHON_VERSION-dev wget unzip \
                        build-essential cmake git pkg-config libatlas-base-dev gfortran \
                        libjasper-dev libgtk2.0-dev libavcodec-dev libavformat-dev \
