@@ -6,4 +6,4 @@
 
 [OpenCV3 Dockerfile](https://github.com/philipz/docker-opencv3/tree/3.4)
 ## How to Use
-docker run -d --name jupyter -v $(pwd):/home/jovyan/opencv -p 8888:8888 philipz/jupyter-opencv3
+docker run -d --name jupyter -e $USER=NAME -e $PASSWD=1234 -v $(pwd):/home/jovyan/opencv -p 8000:8000 philipz/jupyter-opencv3
